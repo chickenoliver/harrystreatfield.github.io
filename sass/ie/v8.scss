@@ -1,32 +1,60 @@
+@import 'vars';
+@import 'mixins';
+
 /*
-	Aerial by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-@import '../vars';
-@import '../mixins';
+/* Basic */
 
-/* Header */
+	code,
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea,
+	.box,
+	.image,
+	.image img,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		position: relative;
+		-ms-behavior: url('css/ie/PIE.htc');
+	}
 
-	#header {
-		nav {
-			a {
-				position: relative;
-				border: solid 1px $color-fg;
-				border-radius: 100%;
-				-ms-behavior: url('css/ie/PIE.htc');
-				&:before {
-					border: 0;
-				}
-			}
-		}
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		line-height: $size-element-height;
 	}
 	
-/* Footer */
+	input[type="checkbox"],
+	input[type="radio"] {
+		@include vendor-property('appearance', 'normal');
 
-	#footer {
-		background-image: url('images/footer.png');
-		background-position: bottom left;
-		background-repeat: repeat-x;
+		& + label {
+			padding: 0 0 0 1.5em;
+
+			&:before {
+				display: none;
+			}
+		}
+	}	
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		&.alt {
+			border: solid $size-border-width $color-border2;
+		}
 	}
