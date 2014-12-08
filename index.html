@@ -48,6 +48,8 @@
 										<li>
 										</li>
 										<li><a href="#helloword">Bug fixes and glitches</a></li>
+
+					
 									</ul>
 								</li>
 								<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
@@ -86,7 +88,16 @@
 									<header>
 										<h3>Art Pixlr Edits</h3>
 									</header>
-									<p>In Art, we have recently been using Pixlr to edit tone, contrast, hue on saturation on images we have taken in a group of three. After we have finished editing them on Pixlr, it's back to painting and we have to paint the photos we have edited. I will post the final result.</p>
+									<p>In Art, we have recently been using Pixlr to edit tone, contrast, hue on saturation on images we have taken in a group of three. After we have finished editing them on Pixlr, it's back to painting and we have to paint the photos we have edited. I will post the final result.</p> 																					 <a onclick="playSound('american.mp3')">
+   <span class="button big">Click This If You Dare</span>
+</a>
+<div id="sound"></div>
+
+<script>
+   var playSound = function (soundFile) {
+      $("#sound").html("<embed src=\"" + soundFile + "\" hidden=\"true\" autostart=\"true\" />");
+   }
+</script>
 								</section>
 								
 						</div>
@@ -316,7 +327,8 @@
 						<div class="6u">
 							<section>
 								<section id="contact">
-								<p>I know you have questions. People always have questions, tons of questions. You can spam me with questions here guys. I will have a reply back to you within a week.</p>
+								<p>I know you have questions. People always have questions, tons of questions. You can spam me with questions here guys. I will have a reply back to you within a week.</p> 
+
 								<div class="row">
 									<div class="6u">
 										<ul class="icons">
@@ -345,7 +357,8 @@
 											<li class="icon fa-google">
 												<a href="https://plus.google.com/u/0/+HarryStreatfield/posts">+harrystreatfield</a>
 											</li>
-										</ul>
+
+					</ul>
 									</div>
 								</div>
 							</section>
