@@ -54,7 +54,7 @@
 								</li>
 								<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
 								<li><a class="icon fa-code" href="codingwebsite/index.html"><span>Coding Website</span></a></li>
-								<li><a class="icon  fa-file-text" href="articles"><span>Articles</span></a></li>
+								<li><a class="icon  fa-file-text" href="#articles"><span>Articles</span></a></li>
 							</ul>
 						</nav>
 
@@ -65,8 +65,18 @@
 			<div id="features-wrapper">
 				<section id="features" class="container">
 					<header>
-						<h2> Hola &nbsp; Hallo &nbsp; 你好 &nbsp; Hello &nbsp; Bonjour   <strong></strong>!</h2>
-					</header>
+					<h2> <div id="sound"></div> <a  onclick="playSound('american.mp3')">Hello</a>
+						 <a  onclick="playSound('sound/dutch.mp3')">&nbsp;Hallo</a>
+						 <a  onclick="playSound('sound/spanish.mp3')">&nbsp;Hola</a>
+						 <a  onclick="playSound('sound/french.mp3')">&nbsp;Bonjour</a>
+						 <a  onclick="playSound('sounnd/italian.mp3')">&nbsp;Ciao</a>
+						  <a  onclick="playSound('sound/japanese.mp3')">&nbsp;Konichiwa</a>
+						  <a  onclick="playSound('sound/danish.mp3')">&nbsp;Hej</a>
+
+ 
+
+<strong></strong></h2>
+					
 					<div class="row">
 						<div class="4u">
 
@@ -88,16 +98,7 @@
 									<header>
 										<h3>Art Pixlr Edits</h3>
 									</header>
-									<p>In Art, we have recently been using Pixlr to edit tone, contrast, hue on saturation on images we have taken in a group of three. After we have finished editing them on Pixlr, it's back to painting and we have to paint the photos we have edited. I will post the final result.</p> 																					 <a onclick="playSound('american.mp3')">
-   <span class="button big">Click This If You Dare</span>
-</a>
-<div id="sound"></div>
-
-<script>
-   var playSound = function (soundFile) {
-      $("#sound").html("<embed src=\"" + soundFile + "\" hidden=\"true\" autostart=\"true\" />");
-   }
-</script>
+									<p>In Art, we have recently been using Pixlr to edit tone, contrast, hue on saturation on images we have taken in a group of three. After we have finished editing them on Pixlr, it's back to painting and we have to paint the photos we have edited. I will post the final result.</p> 																					
 								</section>
 								
 						</div>
@@ -374,3 +375,9 @@
 
 	</body>
 </html>
+
+<script>
+   var playSound = function (soundFile) {
+      $("#sound").html("<embed src=\"" + soundFile + "\" hidden=\"true\" autostart=\"true\" />");
+   }
+</script>
