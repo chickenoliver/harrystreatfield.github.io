@@ -32,8 +32,11 @@
 				<div id="header" class="container">
 					
 					<!-- Logo -->
-						<h1 id="logo"><a href="index.html">Harry Streatfield</a></h1>
-						<p>This is my website. It contains <strong> everything. </strong>  </p> 
+						<h1 id="logo"><a href="index.html">Harry Streatfield</a></h1>						  <video width="320" height="240" controls>
+  <source src="osama.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+						<p>This is my website. It contains <strong> everything. </strong></p> 
 
 
   
@@ -69,13 +72,15 @@
 				<section id="features" class="container">
 					<header>
 						<p> Click on each  of the languages </p>
-					<h2> <div id="sound"></div> <a  onclick="playSound('sound/american.mp3')">Hello</a>
+					<h2> <div id="sound"></div> <a onclick="playSound('sound/american.mp3')">Hello</a>
 						 <a  onclick="playSound('sound/dutch.mp3')">&nbsp;Hallo</a>
 						 <a  onclick="playSound('sound/spanish.mp3')">&nbsp;Hola</a>
 						 <a  onclick="playSound('sound/french.mp3')">&nbsp;Bonjour</a>
 						 <a  onclick="playSound('sound/pizza.mp3')">&nbsp;Ciao</a>
 						  <a  onclick="playSound('sound/japanese.mp3')">&nbsp;Konichiwa</a>
 						  <a  onclick="playSound('sound/danish.mp3')">&nbsp;Hej</a>
+
+
 
  
 
@@ -384,15 +389,8 @@
 					</ul>
 				</div>
 			</div>
-
-			<div class="audiobar"><embed src="music.mp3"  volume="10" width="0.1px" height="0.1px" track.volume="0.2"  autoplay="true" controller="false"></embed></div>
-
-
+			
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	</body>
 </html>
 
-<script>
-   var playSound = function (soundFile) {
-      $("#sound").html("<embed src=\"" + soundFile + "\" hidden=\"true\" autostart=\"true\" />");
-   }
-</script>
