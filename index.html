@@ -33,13 +33,13 @@
 					
 					<!-- Logo -->
 						<h1 id="logo"><a href="index.html">Harry Streatfield</a></h1>
-						<p>This is my website. It contains <strong> everything. </strong></p> 
+						<p>This is my website. It contains <strong> everything. </strong></p>
 
 
   
 					
 					<!-- Nav -->
-						<nav id="nav">
+					<nav id="nav">
 							<ul>
 								<li><a class="icon fa-home" href="index.html"><span>Introduction</span></a></li>
 								<li>
@@ -70,14 +70,15 @@
 					<header>
 					
 					<h2> 
-						<div id="Sound"> <a onclick="playSound('sound/american.mp3')">Hello</a>
-						 <a  onclick="playSound('sound/dutch.mp3')">&nbsp;Hallo</a>
-						 <a  onclick="playSound('sound/spanish.mp3')">&nbsp;Hola</a>
-						 <a  onclick="playSound('sound/french.mp3')">&nbsp;Bonjour</a>
-						 <a  onclick="playSound('sound/pizza.mp3')">&nbsp;Ciao</a>
-						  <a  onclick="playSound('sound/japanese.mp3')">&nbsp;Konichiwa</a>
-						  <a  onclick="playSound('sound/danish.mp3')">&nbsp;Hej</a>
-</div>
+						<a onclick="playSound('sound/american.mp3')"><a>Hello <span class="extra">is English for hello.</span></a>
+						 <a  onclick="playSound('sound/dutch.mp3')">&nbsp;<a>Hallo <span class="extra">is Dutch for hello.</span></a>
+						 <a  onclick="playSound('sound/spanish.mp3')">&nbsp;<a>Hola <span class="extra">is Spanish for hello.</span></a>
+						 <a  onclick="playSound('sound/french.mp3')">&nbsp;<a>Bonjour <span class="extra">is French for hello.</span></a>
+						 <a  onclick="playSound('sound/pizza.mp3')">&nbsp;<a>Ciao <span class="extra">is Italian for hello.</span></a>
+						  <a  onclick="playSound('sound/japanese.mp3')">&nbsp;<a>Konichiwa <span class="extra">is Japanese for hello.</span></a>
+						  <a  onclick="playSound('sound/danish.mp3')">&nbsp;<a>Hej <span class="extra">is Danish for hello.</span></a>
+
+
 				
 
 
@@ -373,24 +374,40 @@
 											</li>
 											<li class="icon fa-google">
 												<a href="https://plus.google.com/u/0/+HarryStreatfield/posts">+harrystreatfield</a>
-											</li>
-
-					</ul>
+								</li>
+										</ul>
 									</div>
 								</div>
 							</section>
 						</div>
 					</div>
 				</div>
+		
+			
+
 				<div id="copyright" class="container">
 					<ul class="links">
-						<li>&copy; Harry Streatfield. All rights reserved.</li></a></li>
+						<li>&copy; Harry Streatfield. All rights reserved. 
+
+				</div>
+			</div>
+ 
+
+
+
+					<style type="text/css">.extra { 
+    display: none;
+}
+
+a:hover .extra {
+    display: inline-block;
+}</style>
+
+
 
 					</ul>
 				</div>
 			</div>
-			
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	</body>
 </html>
 
