@@ -16,6 +16,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script type="text/javascript" src="js/smoothscroll.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -41,23 +42,19 @@
 					<!-- Nav -->
 					<nav id="nav">
 							<ul>
-								<li><a class="icon fa-home" href="index.html"><span>Introduction</span></a></li>
+								<li><a class="icon fa-home smoothScroll" href="#features"><span>Introduction</span></a></li>
 								<li>
-									<a href="" class="icon fa-refresh"><span>Updates</span></a>
+									<a href="" class="icon fa-refresh smoothScroll" ><span>Updates</span></a>
 									<ul>
-										<li><a href="#helloword">Made this new website</a></li>
-										<li><a href="#helloword">Created a new page involving everything with code</a></li>
-										<li><a href="#helloword">Just some small tweaks</a></li>
-										<li>
-										</li>
-										<li><a href="#helloword">Bug fixes and glitches</a></li>
-
-					
+										<li><a href="#helloword" class="smoothScroll">Contact Button Working</a></li>
+										<li><a href="#helloword" class="smoothScroll">Finished the about me article</a></li>
+										<li><a href="#helloword" class="smoothScroll">Just some small tweaks</a></li>
+										<li><a href="#helloword" class="smoothScroll">Bug fixes and glitches</a></li>
 									</ul>
 								</li>
-								<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
-								<li><a class="icon fa-code" href="codingwebsite/index.html"><span>Coding Website</span></a></li>
-								<li><a class="icon  fa-file-text" href="#articles"><span>Articles</span></a></li>
+								<li><a class="icon fa-envelope smoothScroll" href="#contact"><span>Contact</span></a></li>
+								<li><a class="icon fa-code smoothScroll" href="codingwebsite/index.html"><span>Coding Website</span></a></li>
+								<li><a class="icon  fa-file-text smoothScroll"  href="#articles"><span>Articles</span></a></li>
 							</ul>
 						</nav>
 
@@ -165,54 +162,16 @@
 								<!-- Post -->
 									<article class="box post">
 										<header>
-											<h2>I don't want to make this too long <strong>it’s all about me</strong> ...<br />
-											but you need to know.</a></h2>
+											<h2>I don't want to make this too long <strong>it’s all about me</strong> ...
+											</h2>
 										</header>
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<h3>I mean isn't it possible?</h3>
-										<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit 
-										ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris 
-										sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada 
-										in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat 
-										magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros 
-										consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-										justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet 
-										mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. 
-										Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.</p>
+										<class="image featured"><img src="images/pic04.jpg" alt="">
+										<h3>A short article about me</h3>
+										<p>I am Harry Streatfielld. I study at Kellett School in Hong Kong and I am in Year Seven Clementi. Me and mmy familly moved out to HK because of my dads job, and now we have been living here for around four years. We live in the new terrotries, away from all the busy and polluted city life. Continuing onto a completely new subject, my favourite hobbies are running and biking, and also coding of course. I just lovee  working with computers, apple teechnology and macs. I find them really intresting and we are  really priveleged to be able to work with them.</p>
 										
 									</article>
 
-								<!-- Post -->
-									<article class="box post">
-										<header>
-											<h2><a href="#">By the way, many thanks to <strong>regularjane</strong>
-											for these awesome demo photos</a></h2>
-										</header>
-										<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-										<h3>You should probably check out her work</h3>
-										<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit 
-										ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris 
-										sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada 
-										in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat 
-										consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-										in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat 
-										magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros 
-										consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-										justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet 
-										mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. 
-										Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.</p>
-										<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat 
-										Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula 
-										vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet 
-										magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in, 
-										tristique at erat. Curabitur leo nibh, rutrum eu malesuada  in, tristique 
-										at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna 
-										tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat 
-										magna tempus</p>
-									
-									</article>
-							
-							</div>
+								</div>
 							
 						<!-- Sidebar -->
 							<div id="sidebar" class="4u">
@@ -251,51 +210,19 @@
 												<!-- Excerpt -->
 													<article class="box excerpt">
 														<header>
-															<span class="date">July 24</span>
-															<h3><a href="#">One more post</a></h3>
+															<span class="date">December 13</span>
+															<h3><a href="#">Articles</a></h3>
 														</header>
-														<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est 
-														suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
+														<p>Finally got round to writing the about me article, go check it out its right next to this post.</p>
 													</article>
 
 														<!-- Excerpt -->
 													<article class="box excerpt">
 														<header>
-															<span class="date">July 24</span>
-															<h3><a href="#">One more post</a></h3>
+															<span class="date">December 14</span>
+															<h3><a href="#">Contact Button</a></h3>
 														</header>
-														<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est 
-														suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
-													</article>
-
-														<!-- Excerpt -->
-													<article class="box excerpt">
-														<header>
-															<span class="date">July 24</span>
-															<h3><a href="#">One more post</a></h3>
-														</header>
-														<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est 
-														suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
-													</article>
-
-														<!-- Excerpt -->
-													<article class="box excerpt">
-														<header>
-															<span class="date">July 24</span>
-															<h3><a href="#">One more post</a></h3>
-														</header>
-														<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est 
-														suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
-													</article>
-
-														<!-- Excerpt -->
-													<article class="box excerpt">
-														<header>
-															<span class="date">July 24</span>
-															<h3><a href="#">One more post</a></h3>
-														</header>
-														<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est 
-														suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
+														<p>Finally got the contact button to work, no more errors. People can now contact me. Check it out below in the 'contact me' section.</p>
 													</article>
 
 											</li>
@@ -304,9 +231,7 @@
 							
 							
 									</section>
-							
 							</div>
-
 					</div>
 				</div>
 			</div>
@@ -320,7 +245,7 @@
 					<div class="row">
 						<div class="6u">
 							<section>
-								<form method="post" action="#">
+								<form method="post" action="MAILTO:hstreats@gmail.com">
 									<div class="row 50%">
 										<div class="6u">
 											<input name="name" placeholder="Name" type="text" />
@@ -360,6 +285,11 @@
 											<li class="icon fa-envelope">
 												<a href="MAILTO:harrykiran123@gmail.com">harrykiran123@gmail.com</a>
 											</li>
+
+												<li class="icon fa-code ">
+												<a href="codingwebsite/index.html" class="form-button-submit button icon fa fa-code">To Coding Site</a>
+								</li>
+
 										</ul>
 									</div>
 									<div class="6u">
@@ -375,6 +305,14 @@
 											<li class="icon fa-google">
 												<a href="https://plus.google.com/u/0/+HarryStreatfield/posts">+harrystreatfield</a>
 								</li>
+								
+								<li class="icon fa-arrow-up ">
+												<a href="#top" class="form-button-submit button ">Back To Top</a>
+								</li>
+
+									</li>
+							
+
 										</ul>
 									</div>
 								</div>
