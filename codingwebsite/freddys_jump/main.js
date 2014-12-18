@@ -252,7 +252,7 @@ function init() {
 			} else if (key == 39) {
 				dir = "right";
 				player.isMovingRight = true;
-			} else if (key == 38) {player.vy += -4;}
+			} else if (key == 87) {player.vy += -4;}
 			
 			if(key == 32) {
 				if(firstRun === true)
