@@ -37,6 +37,9 @@
 						<h1 id="logo"><a href="index.html">Harry Streatfield</a></h1>
 						<p>This is my website. It contains <strong> everything. </strong></p>
 
+						
+
+
 
   
 					
@@ -173,6 +176,14 @@
 										
 									</article>
 
+									<article class="box post">
+										<h2> Instagram Feed </h2>
+									<!-- SnapWidget -->
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="http://snapwidget.com/bd/?u=aGFycnlzdHJlYXRzfGlufDIwMHwzfDN8fHllc3wyMHxub25lfG9uU3RhcnR8eWVzfHllcw==&ve=201214" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+									</article>
+
+
 								</div>
 							
 						<!-- Sidebar -->
@@ -227,6 +238,20 @@
 														<p>Finally got the contact button to work, no more errors. People can now contact me. Check it out below in the 'contact me' section.</p>
 													</article>
 
+														<!-- Excerpt -->
+													<article class="box excerpt">
+														<header>
+															<span class="date">December 20</span>
+															<h3><a href="#">Social Networks</a></h3>
+														</header>
+														<p>Today I have embedded my twitter feed and instagram feed. Do you like it? Tell me in the contact section. </p>
+													</article>
+
+													<article class="box excerpt">
+														<a class="twitter-timeline" href="https://twitter.com/hks0407" data-widget-id="546362020426440704">Tweets by @hks0407</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+														
+													</article>
+
 											</li>
 										</ul>
 									</section>
@@ -247,27 +272,54 @@
 					<div class="row">
 						<div class="6u">
 							<section>
-								<form method="post" action="MAILTO:hstreats@gmail.com">
-									<div class="row 50%">
-										<div class="6u">
-											<input name="name" placeholder="Name" type="text" />
-										</div>
-										<div class="6u">
-											<input name="email" placeholder="Email" type="text" />
+						<form method="post" action="MAILTO:harrykiran123@gmail.com" enctype="text/plain">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(3)">
+										<input type="text" name="Name" id="Name" value="" placeholder="Name" />
+									</div>
+									<div class="6u$ 12u$(3)">
+										<input type="email" name="Email" id="Email" value="" placeholder="Email" />
+									</div>
+									<div class="12u$">
+										<div class="select-wrapper">
+											<select name="Category" id="demo-category">
+												<option value="Personal Info">- Personal Info -</option>
+												<option value="Gaming Requests"> Gaming Requests</option>
+												<option value="Youtube"> Youtube </option>
+												<option value="Social Networking">Social Networking</option>
+												<option value="PS4, XBOX, Consoles">PS4, XBOX, Consoles</option>
+											</select>
 										</div>
 									</div>
-									<div class="row 50%">
-										<div class="12u">
-											<textarea name="message" placeholder="Message"></textarea>
-										</div>
+									<div class="4u 12u$(2)">
+										<input type="radio" id="Low Priority" name="Low Priority" checked >
+										<label for="demo-priority-low">Low Priority</label>
 									</div>
-									<div class="row 50%">
-										<div class="12u">
-											<a href="#" class="form-button-submit button icon fa-envelope">Send Message</a>
-										</div>
+									
+									<div class="4u$ 12u(2)">
+										<input type="radio" id="demo-priority-high" name="High Priority">
+										<label for="demo-priority-high">High Priority</label>
 									</div>
-								</form>
-							</section>
+									<div class="6u 12u$(2)">
+										<input type="checkbox" id="demo-copy" name="Copy Of Message">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="6u$ 12u$(2)">
+										<input type="checkbox" id="demo-human" name="Human Not A Spam Bot" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="12u$">
+										<textarea name="Message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="12u$">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
 						</div>
 						<div class="6u">
 							<section>
@@ -304,8 +356,8 @@
 											<li class="icon fa-instagram">
 												<a href="https://www.instagram.com/harrystreats">@harrystreats</a>
 											</li>
-											<li class="icon fa-google">
-												<a href="https://plus.google.com/u/0/+HarryStreatfield/posts">+harrystreatfield</a>
+											<li class="icon fa-twitter">
+												<a href="https://twitter.com/hks0407">@hks0407</a>
 								</li>
 								
 								<li class="icon fa-arrow-up ">
@@ -313,6 +365,8 @@
 								</li>
 
 									</li>
+
+
 							
 
 										</ul>
