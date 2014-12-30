@@ -14,7 +14,7 @@
 
 	body
 	{
-		background: #f0f0f0;
+		background: url('../images/hello.jpg'); ;
 	}
 
 		body.is-loading *
@@ -42,7 +42,7 @@
 	{
 		font-weight: 600;
 		text-transform: uppercase;
-		color: #888;
+		color: #9E9B95 ;#888;
 	}
 	
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
@@ -597,7 +597,9 @@
 	#header-wrapper
 	{
 		position: relative;
-		background: #fff;
+		background: url('../images/hello.jpg'); /*********************************************************************************/
+/* This is the bit which says harry streatfield and this is my website.                                                                    */
+/*********************************************************************************/ 
 		text-align: center;
 	}
 
@@ -610,7 +612,7 @@
 	{
 		position: relative;
 		overflow: hidden;
-		background: #fff;
+		background: url('../images/banner.jpg');;
 		color: #fff;
 		text-align: center;
 		border-top: solid 2px #e5e5e5;

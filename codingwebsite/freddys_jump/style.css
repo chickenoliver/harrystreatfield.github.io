@@ -54,7 +54,7 @@ img {display: none}
 }
 
 #gameOverMenu {
-	visibility: hidden;
+	visibility: shown;
 }
 
 h2, h3, h1 {font-weight: normal}
