@@ -1,5 +1,5 @@
 /*
-	Strongly Typed by HTML5 UP
+	TXT by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -8,39 +8,45 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
+	.image:before
+	{
+		display: none;
+	}
+
+	.image,
+	.image img,
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	.button,
+	ul.contact li a,
+	ul.special a,
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
 	form select,
 	form textarea,
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	.button,
-	.box.excerpt .date
+	#copyright,
+	#nav li a,
+	#nav li span
 	{
 		position: relative;
 		-ms-behavior: url('css/ie/PIE.htc');
 	}
 
-	/* Sections/Article */
+	/* Section/Article */
 	
-		section,
-		article
+		section > .last-child,
+		article > .last-child
 		{
+			margin-bottom: 0;
 		}
-		
-			section > .last-child,
-			article > .last-child
-			{
-				margin-bottom: 0;
-			}
 
-			section.last-child,
-			article.last-child
-			{
-				margin-bottom: 0;
-			}
+		section.last-child,
+		article.last-child
+		{
+			margin-bottom: 0;
+		}
 			
 /*********************************************************************************/
 /* Wrappers                                                                      */
@@ -48,9 +54,52 @@
 
 	#banner-wrapper
 	{
+		background-image:		url('../../images/banner.jpg');
+		background-position:	center center;
+		background-repeat:		no-repeat;
+		background-size:		cover;
+		-ms-behavior: url('css/ie/backgroundsize.min.htc');
 	}
 
-		#banner-wrapper .inner
+		#banner-wrapper:before
 		{
-			-ms-behavior: url('css/ie/backgroundsize.min.htc');
+			display: none;
+		}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		background: #f8f8f8;
+	}
+
+		#nav:after
+		{
+			display: none;
+		}
+		
+	.dropotron
+	{
+		box-shadow: none !important;
+		-ms-behavior: url('css/ie/PIE.htc');
+	}
+		
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		background: rgb(21, 28, 23);
+	}
+
+		#banner:before
+		{
+			display: none;
+		}
+
+		#banner:after
+		{
 		}
