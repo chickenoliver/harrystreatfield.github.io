@@ -1,0 +1,55 @@
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Iron Man Jump Experiments - Random Spring Mode</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="/assets/js/prefixfree.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<canvas id="canvas">
+			Aww, your browser doesn't support HTML5!
+		</canvas>
+
+		<div id="mainMenu">
+			<h2>Iron Man Jump Experiments (Random Spring Mode)</h2>
+			<h3>using HTML5,</h3>
+			<h3>...by Iron Man Jump Experiments</h3>
+
+			<!-- Harry, comment out the paragraph below after you have read it. -->
+			<p><b>Experiment 6: Random Spring Mode</b></p>
+			<p>The springs in this game mode are unpredictable.  They might give you a huge boost, or they might drag you down to your doom.  Are you willing to take the risk and jump on the springs, or are you going to stay safe and avoid them?  The decision is up to you.</p>
+			<!-- <p><i>The number of platforms have increased by 50% to make life easier.</i></p> -->
+
+			<!-- <p class="info">
+				use
+				<span class="key left">←</span>
+				<span class="key right">→</span>
+				to move and space to (re) start...
+			</p> -->
+			<p class="info">&copy; Untitled.  All rights reserved. | Design: Iron Man Jump Experiments</p>
+			<a class="button" href="javascript:init()">Play</a>
+		</div>
+		
+		<div id="gameOverMenu">
+			<h1>game over!</h1>
+			<h3 id="go_score">you scored 0 points</h3>
+
+			<a class="button" href="javascript:reset()">Restart</a>
+			<a id="tweetBtn" target="_blank" class="button tweet" href="#">Tweet score</a>
+
+			<a id="fbBtn" target="_blank" class="button fb" href="#">Post on FB</a>
+		</div>
+		iron_man_jump.png
+		
+		<!-- Preloading image ;) -->
+		<img id="sprite" src="iron_man_jump.png"/>
+
+		<div id="scoreBoard">
+			<p id="score">0</p>
+		</div>
+
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>	
