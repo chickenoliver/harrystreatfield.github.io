@@ -10,19 +10,25 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+		<meta http-equiv="refresh" content="0; url=http://harrystreatfield.com" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="https://apis.google.com/js/client:platform.js" async defer></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
+
+			
 		</noscript>
 
-		<meta http-equiv="refresh" content="0; url=http://harrystreatfield.com" />
+
+
+	
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
@@ -32,7 +38,7 @@
 				<div class="logo container">
 					<div>
 						<h1><a href="index.html" id="logo">Harry Streatfield</a></h1>
-						<p>A student at Kellett School</p>
+						</h2>Welcome To harrystreatfield.com</h2>
 					</div>
 				</div>
 			</header>
@@ -102,7 +108,16 @@
 									</ul>
 									<header>
 										<h2>Social Networking</h2>
-										<p>Continue expanding social profiles...</p>
+										<p>Continue expanding social profiles... <span id="signinButton">
+  <span
+    class="g-signin"
+    data-callback="signinCallback"
+    data-clientid="308421140979-n3qpl58h2n5004agefagn156f6f3bpsr.apps.googleusercontent.com"
+    data-cookiepolicy="single_host_origin"
+    data-requestvisibleactions="http://schema.org/AddAction"
+    data-scope="https://www.googleapis.com/auth/plus.login">
+  </span>
+</span></p>
 									</header>
 
 
@@ -111,6 +126,24 @@ function myFunction() {
     alert("You Are Now Visiting An Old Site Made By Harry Streatfield");
 }
 </script>
+
+<script>
+function signinCallback(authResult) {
+  if (authResult['status']['signed_in']) {
+    // Update the app to reflect a signed in user
+    // Hide the sign-in button now that the user is authorized, for example:
+    document.getElementById('signinButton').setAttribute('style', 'display: none');
+  } else {
+    // Update the app to reflect a signed out user
+    // Possible error values:
+    //   "user_signed_out" - User is signed-out
+    //   "access_denied" - User denied access to your app
+    //   "immediate_failed" - Could not automatically log in the user
+    console.log('Sign-in state: ' + authResult['error']);
+  }
+}
+</script>
+
 
 									
 						
